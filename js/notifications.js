@@ -5,7 +5,7 @@ class Notify{
     }
 
     success(msg, icon = null){
-        if(this.notRecurring(msg)){
+        if(this.recurring(msg)){
             // create main notification
             const notif = document.createElement('div');
             notif.classList.add('notification');
@@ -30,7 +30,7 @@ class Notify{
             // add span to notification
             notif.appendChild(text_span);
             // add notification to list
-            document.getElementById('notifications-wrap-inner').appendChild(notif);
+            document.getElementById('notifications-wrap').appendChild(notif);
             // set auto destroy
             this.setTimer(notif, msg);
             // add notification msg to array
@@ -51,24 +51,12 @@ class Notify{
         window.setTimeout(function(){
             let index = msgs.indexOf(msg);
             msgs.splice(index, 1);
-            document.getElementById('notifications-wrap-inner').removeChild(notif);
+            document.getElementById('notifications-wrap').removeChild(notif);
         }, 3000);
     }
 
-    notRecurring(msg){
-        const thresh = 2;
-        let found = 0;
-        let valid = true;
-        for (var i = this.messages.length-1; i > 0; i--) {
-            if(this.messages[i] == msg){
-                found++;
-            }
-            if(found == thresh){
-                valid = false;
-                break;
-            }
-        }
-        return valid;
+    recurring(msg){
+        return !(this.messages[this.messages.length - 1] == msg) || this.messages.length == 0;
     }
 }
 
