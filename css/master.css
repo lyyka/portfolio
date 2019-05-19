@@ -1,0 +1,59 @@
+/* https://www.schemecolor.com/shades-of-green.php */
+html, body{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+}
+
+/* GENERAL DISPLAY */
+.cursor-pointer{
+    cursor: pointer !important;
+}
+.circle-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+/* ALIGNMENT */
+/* must be absolutely positioned first with position-absolute BS class */
+.align-xy{
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* COLORS */
+.green-text{
+    color: #76BA1B !important;
+}
+.green-bg{
+    background-color: #76BA1B !important;
+}
+
+
+/* TEXT RESPONSIVENESS FROM BOOTSTRAP */
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
