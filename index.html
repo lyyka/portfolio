@@ -70,7 +70,7 @@
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div>
         <div class="container">
-            <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white">
+            <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
                 <section id = 'top-section' class = 'pt-5'>
                     <div class="container">
                         <div class="row">
@@ -78,9 +78,11 @@
                                 <div id="profile_photo" class="rounded-circle"></div>
                             </div>
                             <div class="col-lg-8 mb-5">
-                                <h1 class = "h3">Hello, I am Luka. <br />
+                                <h1 class = "h3 mb-3">Hello, I am Luka. <br />
                                     A full-stack web developer.</h1>
-                                <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                                <p class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                                <p class="text-muted mb-2"><i class="fas fa-birthday-cake"></i> <span id = 'years-old'></span></p>
+                                <p class="text-muted mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-muted">luka.robajac@gmail.com</a></p>
                             </div>
                         </div>
                         <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Flyyka.github.io%2Fportfolio&layout=button&size=large&width=74&height=28&appId" width="74" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -117,8 +119,8 @@
                             the experience that I consider a must have in order to
                             be able to build the best apps possible!
                         </p>
-                        <a href='./pages/projects_list.html' class = 'green-text'>
-                            View the full list of my projects >
+                        <a href='./pages/projects_list.html' class = 'text-white dgreen-bg p-2 rounded shadow-sm'>
+                            View list of my projects <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>
                 </section>
@@ -176,8 +178,8 @@
                             bounce off into the world of unknown!
                         </p>
                         <!-- IDEA: PUT SOME OF THE BEST REVIEWS HERE (2-3) -->
-                        <a href='./pages/reviews.html' class = 'green-text'>
-                            View all reviews on my work >
+                        <a href='./pages/reviews.html' class = 'text-white dgreen-bg p-2 rounded shadow-sm'>
+                            View reviews of my work <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>
                 </section>
@@ -236,8 +238,30 @@
           return t;
         }(document, "script", "twitter-wjs"));</script>
         <script>
+            // configure twitter button
             document.getElementById('twt-share').setAttribute("data-url", window.location.href);
             document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
+
+            // configure age
+            Date.daysBetween = function( date1, date2 ) {
+              //Get 1 day in milliseconds
+              var one_day=1000*60*60*24;
+
+              // Convert both dates to milliseconds
+              var date1_ms = date1.getTime();
+              var date2_ms = date2.getTime();
+
+              // Calculate the difference in milliseconds
+              var difference_ms = date2_ms - date1_ms;
+
+              // Convert back to days and return
+              return Math.round(difference_ms/one_day);
+            }
+            const birthday = new Date(2000, 8, 18);
+            const today = new Date();
+            const days_between = Date.daysBetween(birthday, today);
+            const years = days_between / 365;
+            document.getElementById('years-old').innerText = years.toFixed(2) + " years old";
         </script>
         <script src = './js/scroll.js'></script>
         <script src = './js/notifications.js'></script>

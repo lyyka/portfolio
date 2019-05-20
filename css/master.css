@@ -49,6 +49,15 @@ body{
 .green-bg{
     background-color: #76BA1B !important;
 }
+.dgreen-text{
+    color: #1E5631 !important;
+}
+.dgreen-bg{
+    background-color: #1E5631 !important;
+}
+.b-top-green{
+    border-top: 5px solid #76BA1B !important;
+}
 
 /* SCROLLBAR */
 /* width */
