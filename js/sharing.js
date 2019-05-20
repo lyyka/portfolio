@@ -3,7 +3,7 @@
 })();
 
 function copyShareLink(){
-    str = 'https://lyyka.github.io/portfolio';
+    str = window.location.href;
     const el = document.createElement('textarea');
     el.value = str;
     el.setAttribute('readonly', '');

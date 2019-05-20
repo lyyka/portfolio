@@ -6,6 +6,9 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     word-wrap: break-word;
 }
+body{
+    background-color: #f9f9f9;
+}
 
 /* GENERAL DISPLAY */
 .cursor-pointer{
@@ -18,6 +21,15 @@ html, body{
     text-align: center;
     line-height: 60px;
     vertical-align: middle;
+}
+#share-button{
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#share-button > i.fas{
+    background-color: #1E5631;
 }
 
 /* ALIGNMENT */
@@ -36,6 +48,27 @@ html, body{
 }
 .green-bg{
     background-color: #76BA1B !important;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+ width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #76BA1B;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #A4DE02;
 }
 
 

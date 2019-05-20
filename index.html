@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127707759-1"></script>
@@ -11,11 +11,11 @@
         </script>
         <!-- meta tags -->
         <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="application-name" content="Portfolio website" />
         <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
-        <meta name="title" content="Lyyka - Portfolio" />
+        <meta name="title" content="Luka Robajac - Portfolio" />
         <meta name="description" content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
         <meta name="abstract" content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
         <meta name="keywords" content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
@@ -24,8 +24,24 @@
         <meta name="language" content="EN" />
         <meta name="copyright" content="© 2019 Luka Robajac" />
         <meta name="robots" content="All" />
+        <!-- OPENGRAPH -->
+        <meta property="og:title" content="Luka Robajac - Portfolio Website" />
+        <meta property="og:description"
+          content="This is my portfolio website as a full stack web developer.
+          You will get to know me better and learn about what I do!" />
+        <meta property="og:image" content="https://lyyka.github.io/images/preview.png" />
+        <meta property="og:url" content="http://lyyka.github.io/portfolio" />
+        <meta property="og:type" content="portfolio" />
+        <meta property="og:determiner" content="the" />
+        <!-- TWITTER CARD -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@LRobajac" />
+        <meta name="twitter:image" content="https://lyyka.github.io/images/preview.png" />
+        <meta name="twitter:title" content="Luka Robajac - Portfolio Website" />
+        <meta name="twitter:description" content="This is my portfolio website as a full stack web developer.
+        You will get to know me better and learn about what I do!" />
         <!-- end meta tags -->
-        <title>Welcome!</title>
+        <title>Luka Robajac - Full Stack web developer - Portfolio</title>
         <!-- css -->
         <!-- bootstrap -->
         <link rel="stylesheet"
@@ -54,7 +70,7 @@
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div>
         <div class="container">
-            <div class="border shadow-sm rounded p-3 my-5 mx-3">
+            <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white">
                 <section id = 'top-section' class = 'pt-5'>
                     <div class="container">
                         <div class="row">
@@ -62,9 +78,16 @@
                                 <div id="profile_photo" class="rounded-circle"></div>
                             </div>
                             <div class="col-lg-8 mb-5">
-                                <h3>Hello, I am Luka. <br />A full-stack web developer.</h3>
+                                <h1 class = "h3">Hello, I am Luka. <br />
+                                    A full-stack web developer.</h1>
+                                <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
                             </div>
                         </div>
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Flyyka.github.io%2Fportfolio&layout=button&size=large&width=74&height=28&appId" width="74" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <a id ='twt-share' class="twitter-share-button"
+                          href="https://twitter.com/intent/tweet?text=Look%20at%20this%20awesome%20portfolio!"
+                          data-size="large">
+                        Tweet</a>
                         <hr />
                     </div>
                 </section>
@@ -99,6 +122,49 @@
                         </a>
                     </div>
                 </section>
+                <section id = 'skills-section' class="my-5 py-4">
+                    <div class="container">
+                        <h4>Skills <i class="em em-weight_lifter"></i></h4>
+                        <div class="mt-3">
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                PHP
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                Laravel
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                NodeJS
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                MongoDB
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                Mongoose
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                MySQL
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                JavaScript
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                jQuery
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                Bootstrap
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                Bulma
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                HTML5
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                CSS3
+                            </span>
+                        </div>
+                    </div>
+                </section>
                 <section id="freelancing-section" class = 'my-5 py-4'>
                     <div class="container">
                         <h4>Freelancing career <i class="em em-nerd_face"></i></h4>
@@ -120,7 +186,7 @@
                 </div>
                 <section id="social-media-section" class = 'my-5 py-4'>
                     <div class="container">
-                        <h4>Follow me on social media <i class="em em-iphone"></i></h4>
+                        <h4>Social media <i class="em em-iphone"></i></h4>
                         <p>
                             I post from time to time a picture of me eating (yes, I mostly
                             do that) or just a selfie. Nothing too much. But you should follow me
@@ -147,11 +213,34 @@
                         </div>
                     </div>
                 </section>
+                <p class="text-center">
+                    <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
+                </p>
             </div>
         </div>
-
         <!-- javascript -->
+        <script>window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+
+          return t;
+        }(document, "script", "twitter-wjs"));</script>
+        <script>
+            document.getElementById('twt-share').setAttribute("data-url", window.location.href);
+            document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
+        </script>
+        <script src = './js/scroll.js'></script>
         <script src = './js/notifications.js'></script>
-        <script src = './js/index.js'></script>
+        <script src = './js/sharing.js'></script>
     </body>
 </html>
