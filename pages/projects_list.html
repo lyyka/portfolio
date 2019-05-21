@@ -59,12 +59,47 @@
         crossorigin="anonymous" />
         <!-- master.css -->
         <link rel="stylesheet" href="./../css/master.css" />
+        <!-- animate.css -->
+        <link rel="stylesheet" href="./../css/animate.css" />
+        <!-- menu.css -->
+        <link rel="stylesheet" href="./../css/menu.css" />
         <!-- index.css -->
         <link rel="stylesheet" href="./../css/projects_list.css" />
         <!-- notifications.css -->
         <link rel="stylesheet" href="./../css/notifications.css" />
     </head>
-    <body>
+    <body class="position-relative">
+        <div id="menu-wrap" class="w-100 h-100">
+            <div class="text-center p-5 m-5">
+                <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
+            </div>
+            <div class="container mt-5 mb-5" id="menu-inner">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h1 class="text-white text-center">Luka Robajac</h1>
+                        <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
+                        <hr class="bg-white w-50" />
+                        <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                        <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-white">luka.robajac@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html">
+                            <i class="fas mr-2 fa-home"></i> Home
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="#top">
+                            <i class="fas mr-2 fa-project-diagram"></i> Projects
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/reviews.html">
+                            <i class="fas mr-2 fa-star"></i> Reviews
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html#social-media-section">
+                            <i class="fas mr-2 fa-hashtag"></i> Social media
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div id="notifications-wrap"></div>
         <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
@@ -72,13 +107,16 @@
         <div class="container">
             <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
                 <div class="container">
-                    <a href="../index.html#projects-section" class="text-dark mb-4 d-inline-block h5"><i class="fas fa-arrow-circle-left"></i></a>
-                    <h2 class="mb-4">List of my projects</h2>
+                    <!-- <a href="../index.html#projects-section" class="text-dark mb-4 d-inline-block h5"><i class="fas fa-arrow-circle-left"></i></a> -->
+                    <div class="mb-4 text-right cursor-pointer pt-3">
+                        <i class="fas fa-bars h4" id = "menu-open"></i>
+                    </div>
+                    <h2 class="mb-4">List of my projects <i class="em em-male-construction-worker"></i></h2>
                     <hr />
                     <h3 class = 'mb-5 mt-5 text-center'>Work</h3>
                     <!-- ROW 1 -->
                     <div class="row">
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/handyhelp.png" class="img-fluid w-100" alt="Contractor hiring website" />
                                 <div class="px-3 py-4">
@@ -88,30 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100">
-                                <img src="../images/projects/houseprice-NZ.png" class="img-fluid w-100" alt="Property Estimate - NZ" />
-                                <div class="px-3 py-4">
-                                    <h5>Property Estimate - NZ</h5>
-                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate agents. Agents later can meet up with client and estimate their property in person.</p>
-                                    <a href="https://www.houseprice.co.nz" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100">
-                                <img src="../images/projects/houseprice-US.png" class="img-fluid w-100" alt="Property Estimate - US" />
-                                <div class="px-3 py-4">
-                                    <h5>Property Estimate - US</h5>
-                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate agents. Agents later can meet up with client and estimate their property in person.</p>
-                                    <a href="https://www.housepricehq.com" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW 2 -->
-                    <div class="row">
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/nistours.png" class="img-fluid w-100" alt="Tour booking website" />
                                 <div class="px-3 py-4">
@@ -121,7 +136,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
+                            <div class="border rounded shadow-sm bg-white h-100">
+                                <img src="../images/projects/houseprice-NZ.png" class="img-fluid w-100" alt="Property Estimate - NZ" />
+                                <div class="px-3 py-4">
+                                    <h5>Property Estimate - NZ</h5>
+                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate agents. Agents later can meet up with client and estimate their property in person.</p>
+                                    <a href="https://www.houseprice.co.nz" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ROW 2 -->
+                    <div class="row">
+                        <div class="col-xl-4 mb-5">
+                            <div class="border rounded shadow-sm bg-white h-100">
+                                <img src="../images/projects/houseprice-US.png" class="img-fluid w-100" alt="Property Estimate - US" />
+                                <div class="px-3 py-4">
+                                    <h5>Property Estimate - US</h5>
+                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate agents. Agents later can meet up with client and estimate their property in person.</p>
+                                    <a href="https://www.housepricehq.com" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/falco.png" class="img-fluid w-100" alt="Company website" />
                                 <div class="px-3 py-4">
@@ -136,40 +176,17 @@
                     <h3 class = 'mb-5 mt-5 text-center'>Personal</h3>
                     <!-- ROW 1 -->
                     <div class="row">
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/yt-sync.png" class="img-fluid w-100" alt="Synchronized video playing" />
                                 <div class="px-3 py-4">
-                                    <h5>Sync video playing</h5>
+                                    <h5>Synced video playing</h5>
                                     <p class="text-muted">Website that allows for multiple users to connect and watch videos synchronized between!</p>
                                     <a href="https://you-sync.herokuapp.com/" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100">
-                                <img src="../images/projects/contacts-app.png" class="img-fluid w-100" alt="Contacts management app" />
-                                <div class="px-3 py-4">
-                                    <h5>Contacts management app</h5>
-                                    <p class="text-muted">App that helps with contact management. Very simple, but helped me learn new things.</p>
-                                    <a href="https://github.com/lyyka/contacts-app-js" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">View Code <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100">
-                                <img src="../images/projects/paint.png" class="img-fluid w-100" alt="Paint app" />
-                                <div class="px-3 py-4">
-                                    <h5>Paint app</h5>
-                                    <p class="text-muted">Simple paint desktop app made in C#. Allows for basic paint usage and file saving.</p>
-                                    <a href="https://github.com/lyyka/paint" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">View Code <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW 2 -->
-                    <div class="row">
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/board-game.png" class="img-fluid w-100" alt="Board game" />
                                 <div class="px-3 py-4">
@@ -179,7 +196,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
+                            <div class="border rounded shadow-sm bg-white h-100">
+                                <img src="../images/projects/contacts-app.png" class="img-fluid w-100" alt="Contacts management app" />
+                                <div class="px-3 py-4">
+                                    <h5>Contacts management app</h5>
+                                    <p class="text-muted">App that helps with contact management. Very simple, but helped me learn new things.</p>
+                                    <a href="https://github.com/lyyka/contacts-app-js" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">View Code <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ROW 2 -->
+                    <div class="row">
+                        <div class="col-xl-4 mb-5">
+                            <div class="border rounded shadow-sm bg-white h-100">
+                                <img src="../images/projects/paint.png" class="img-fluid w-100" alt="Paint app" />
+                                <div class="px-3 py-4">
+                                    <h5>Paint app</h5>
+                                    <p class="text-muted">Simple paint desktop app made in C#. Allows for basic paint usage and file saving.</p>
+                                    <a href="https://github.com/lyyka/paint" target="_blank" class="p-2 rounded shadow-sm green-bg text-white">View Code <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/folder-locker.png" class="img-fluid w-100" alt="Windows Folder Locker" />
                                 <div class="px-3 py-4">
@@ -189,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-5">
+                        <div class="col-xl-4 mb-5">
                             <div class="border rounded shadow-sm bg-white h-100">
                                 <img src="../images/projects/countdown-timer.png" class="img-fluid w-100" alt="Countdown Timer" />
                                 <div class="px-3 py-4">
@@ -202,12 +243,18 @@
                     </div>
                     <p class="text-center">
                         <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
+                        <br />
+                        &copy; Luka Robajac <span id = 'year'></span>
+                        <script>
+                            document.getElementById('year').innerText = (new Date()).getFullYear();
+                        </script>
                     </p>
                 </div>
             </div>
         </div>
         <!-- javascript -->
         <script src = './../js/scroll.js'></script>
+        <script src = './../js/menu.js'></script>
         <script src = './../js/notifications.js'></script>
         <script src = './../js/sharing.js'></script>
     </body>

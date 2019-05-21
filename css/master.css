@@ -10,6 +10,14 @@ body{
     background-color: #f9f9f9;
 }
 
+/* selection color */
+::selection {
+  background: #68BB59; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #68BB59; /* Gecko Browsers */
+}
+
 /* GENERAL DISPLAY */
 .cursor-pointer{
     cursor: pointer !important;

@@ -59,20 +59,58 @@
         crossorigin="anonymous" />
         <!-- master.css -->
         <link rel="stylesheet" href="./css/master.css" />
+        <!-- animate.css -->
+        <link rel="stylesheet" href="./css/animate.css" />
+        <!-- menu.css -->
+        <link rel="stylesheet" href="./css/menu.css" />
         <!-- index.css -->
         <link rel="stylesheet" href="./css/index.css" />
         <!-- notifications.css -->
         <link rel="stylesheet" href="./css/notifications.css" />
     </head>
-    <body>
+    <body class="position-relative">
+        <div id="menu-wrap" class="w-100 h-100">
+            <div class="text-center p-5 m-5">
+                <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
+            </div>
+            <div class="container mt-5 mb-5" id="menu-inner">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h1 class="text-white text-center">Luka Robajac</h1>
+                        <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
+                        <hr class="bg-white w-50" />
+                        <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                        <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-white">luka.robajac@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <a class="d-block mb-3 green-text h5 menu-item" href="#top">
+                            <i class="fas mr-2 fa-home"></i> Home
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/projects_list.html">
+                            <i class="fas mr-2 fa-project-diagram"></i> Projects
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/reviews.html">
+                            <i class="fas mr-2 fa-star"></i> Reviews
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="#social-media-section">
+                            <i class="fas mr-2 fa-hashtag"></i> Social media
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div id="notifications-wrap"></div>
         <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div>
         <div class="container">
             <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
-                <section id = 'top-section' class = 'pt-5'>
+                <section id = 'top-section' class = 'pt-3'>
                     <div class="container">
+                        <div class="mb-4 text-right cursor-pointer">
+                            <i class="fas fa-bars h4" id = "menu-open"></i>
+                        </div>
                         <div class="row">
                             <div class="col-lg-4 mb-5">
                                 <div id="profile_photo" class="rounded-circle"></div>
@@ -81,7 +119,7 @@
                                 <h1 class = "h3 mb-3">Hello, I am Luka. <br />
                                     A full-stack web developer.</h1>
                                 <p class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
-                                <p class="text-muted mb-2"><i class="fas fa-birthday-cake"></i> <span id = 'years-old'></span></p>
+                                <p id = 'birthday-info' class="text-muted mb-2"><i class="fas fa-birthday-cake"></i> <span id = 'years-old'></span></p>
                                 <p class="text-muted mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-muted">luka.robajac@gmail.com</a></p>
                             </div>
                         </div>
@@ -97,31 +135,30 @@
                     <div class="container">
                         <h4>About me <i class="em em-male-technologist"></i></h4>
                         <p>
-                            My full name is Luka Robajac. I am a full-stack web
-                            developer for roughly 2 years now! I love developing just about
+                            My full name is Luka Robajac. I come from a small town of Nis, located in southern part of Serbia.
+                            I am a full-stack web developer for roughly 2 years now! I love developing just about
                             anything, from whole web apps to small scripts that will be
-                            a part of some bigger app or product.
+                            implemented as a  part of some bigger app.
                         </p>
                         <p>
-                            Besides my love for programming, I am very social person and
+                            Besides my love for programming, I am very social orientated person and
                             love to talk a lot. Whether it is discussing projects or
                             talking about your favorite food, I'll be more than happy
-                            to chat with you!
+                            to chat with you and share my opinion so we can have a healthy discussion!
                         </p>
                     </div>
                 </section>
                 <section id="projects-section" class = 'my-5 py-4'>
                     <div class="container">
-                        <h4>My projects <i class="em em-male-construction-worker"></i></h4>
+                        <h4>Projects and experience <i class="em em-male-construction-worker"></i></h4>
                         <p>
                             Through my career as a freelancer, I got to work on many
                             awesome projects. Most important thing I got from them is
-                            the experience that I consider a must have in order to
-                            be able to build the best apps possible!
+                            the experience. I consider that experience a must have in order to
+                            be able to build the best apps possible! Also, let's not forget the knowledge
+                            inevitable part of every project you do, whether it is work or personal
+                            project.
                         </p>
-                        <a href='./pages/projects_list.html' class = 'text-white dgreen-bg p-2 rounded shadow-sm'>
-                            View list of my projects <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </section>
                 <section id = 'skills-section' class="my-5 py-4">
@@ -153,6 +190,9 @@
                                 jQuery
                             </span>
                             <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                                C#
+                            </span>
+                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
                                 Bootstrap
                             </span>
                             <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
@@ -175,12 +215,10 @@
                             web development. It was tough at the begining to find new
                             clients or any jobs at all. But, as the time went by, I managed
                             to earn some clients, their trust and respect. That helped me
-                            bounce off into the world of unknown!
+                            bounce off into the world of unknown! Being a freelancer
+                            can be very hard at some times, but also feels so much rewarding
+                            most of the time!
                         </p>
-                        <!-- IDEA: PUT SOME OF THE BEST REVIEWS HERE (2-3) -->
-                        <a href='./pages/reviews.html' class = 'text-white dgreen-bg p-2 rounded shadow-sm'>
-                            View reviews of my work <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </section>
                 <div class="container mt-3 mb-3">
@@ -217,6 +255,11 @@
                 </section>
                 <p class="text-center">
                     <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
+                    <br />
+                    &copy; Luka Robajac <span id = 'year'></span>
+                    <script>
+                        document.getElementById('year').innerText = (new Date()).getFullYear();
+                    </script>
                 </p>
             </div>
         </div>
@@ -260,10 +303,18 @@
             const birthday = new Date(2000, 8, 18);
             const today = new Date();
             const days_between = Date.daysBetween(birthday, today);
-            const years = days_between / 365;
-            document.getElementById('years-old').innerText = years.toFixed(2) + " years old";
+            if(today.getMonth() == 8 && today.getDate() == 18){
+                document.getElementById('birthday-info').classList.remove('text-muted');
+                document.getElementById('birthday-info').classList.add('text-dark');
+                document.getElementById('years-old').innerHTML = "It's my birthday! <i class='em em-confetti_ball'></i>";
+            }
+            else{
+                const years = days_between / 365;
+                document.getElementById('years-old').innerText = years.toFixed(2) + " years old";
+            }
         </script>
         <script src = './js/scroll.js'></script>
+        <script src = './js/menu.js'></script>
         <script src = './js/notifications.js'></script>
         <script src = './js/sharing.js'></script>
     </body>

@@ -1,0 +1,19 @@
+#menu-wrap{
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 150;
+    background-color: rgba(0,0,0,0.95);
+}
+#menu-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 968px){
+    .menu-item{
+        text-align: center;
+    }
+}
