@@ -71,6 +71,12 @@
         <link rel="stylesheet" href="./css/notifications.css" />
     </head>
     <body class="position-relative">
+        <!-- confetti holder -->
+        <canvas id="confetti-holder" width="100%" height="100%">
+            This browser or document mode doesn't support canvas
+        </canvas>
+
+        <!-- menu -->
         <div id="menu-wrap" class="w-100 h-100">
             <div class="text-center p-5 m-5">
                 <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
@@ -102,12 +108,19 @@
 
             </div>
         </div>
+
+        <!-- wrapper for notifications -->
         <div id="notifications-wrap"></div>
+
+        <!-- share btn -->
         <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div>
+
+        <!-- rest of the page -->
         <div class="container">
             <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
+                <!-- top section -->
                 <section id = 'top-section' class = 'pt-3'>
                     <div class="container">
                         <div class="mb-4 text-right cursor-pointer">
@@ -133,6 +146,8 @@
                         <hr />
                     </div>
                 </section>
+
+                <!-- about me -->
                 <section id="about-section" class = 'my-5 py-4'>
                     <div class="container">
                         <h4>About me <i class="em em-male-technologist"></i></h4>
@@ -150,6 +165,8 @@
                         </p>
                     </div>
                 </section>
+
+                <!-- my projects -->
                 <section id="projects-section" class = 'my-5 py-4'>
                     <div class="container">
                         <h4>Projects and experience <i class="em em-male-construction-worker"></i></h4>
@@ -163,6 +180,8 @@
                         </p>
                     </div>
                 </section>
+
+                <!-- skills -->
                 <section id = 'skills-section' class="my-5 py-4">
                     <div class="container">
                         <h4>Skills <i class="em em-weight_lifter"></i></h4>
@@ -209,6 +228,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- career -->
                 <section id="freelancing-section" class = 'my-5 py-4'>
                     <div class="container">
                         <h4>Freelancing career <i class="em em-nerd_face"></i></h4>
@@ -223,18 +244,17 @@
                         </p>
                     </div>
                 </section>
+
                 <div class="container mt-3 mb-3">
                     <hr />
                 </div>
+
+                <!-- social media -->
                 <section id="social-media-section" class = 'my-5 py-4'>
                     <div class="container">
                         <h4>Social media <i class="em em-iphone"></i></h4>
                         <p>
-                            I post from time to time a picture of me eating (yes, I mostly
-                            do that) or just a selfie. Nothing too much. But you should follow me
-                            either way. I am sure you don't wanna miss what I eat.<br />
-                            Jokes aside, feel free to text me on any of the social media websites,
-                            I will be more than happy to answer you!
+                            If you feel like it you can also follow me on any social media you like. I do post things from time to time. You can of course message me on any of them so we can get in touch about any projects or questions you might have for me!
                         </p>
                         <div class="text-center">
                             <h3 class = 'd-inline-block mx-2'>
@@ -255,6 +275,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- bottom -->
                 <p class="text-center">
                     <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
                     <br />
@@ -266,58 +288,48 @@
             </div>
         </div>
         <!-- javascript -->
-        <script>window.twttr = (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-          if (d.getElementById(id)) return t;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
 
-          t._e = [];
-          t.ready = function(f) {
-            t._e.push(f);
-          };
-
-          return t;
-        }(document, "script", "twitter-wjs"));</script>
+        <!-- twitter script -->
         <script>
-            // configure twitter button
+            window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+            }(document, "script", "twitter-wjs"));
+        </script>
+        <!-- configure twitter button -->
+        <script>
             document.getElementById('twt-share').setAttribute("data-url", window.location.href);
             document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
-
-            // configure age
-            Date.daysBetween = function( date1, date2 ) {
-              //Get 1 day in milliseconds
-              var one_day=1000*60*60*24;
-
-              // Convert both dates to milliseconds
-              var date1_ms = date1.getTime();
-              var date2_ms = date2.getTime();
-
-              // Calculate the difference in milliseconds
-              var difference_ms = date2_ms - date1_ms;
-
-              // Convert back to days and return
-              return Math.round(difference_ms/one_day);
-            }
-            const birthday = new Date(2000, 8, 18);
-            const today = new Date();
-            const days_between = Date.daysBetween(birthday, today);
-            if(today.getMonth() == 8 && today.getDate() == 18){
-                document.getElementById('birthday-info').classList.remove('text-muted');
-                document.getElementById('birthday-info').classList.add('text-dark');
-                document.getElementById('years-old').innerHTML = "It's my birthday! <i class='em em-confetti_ball'></i>";
-            }
-            else{
-                const years = days_between / 365;
-                document.getElementById('years-old').innerText = years.toFixed(2) + " years old";
-            }
         </script>
+
+        <!-- load other scripts -->
+
+        <!-- for scrolling back to top -->
         <script src = './js/scroll.js'></script>
+        <!-- for menu -->
         <script src = './js/menu.js'></script>
+        <!-- notifications pop up on top -->
         <script src = './js/notifications.js'></script>
+        <!-- sharing buttons -->
         <script src = './js/sharing.js'></script>
+        <!-- confetti animation class, used in birthday widget if it is my birthday -->
+        <script src='./js/confetti.js'></script>
+        <script>
+            confetti_party.start();
+        </script>
+        <!-- birthday widget -->
+        <script src = './js/birthday.js'></script>
     </body>
 </html>
