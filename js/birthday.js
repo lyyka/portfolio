@@ -20,6 +20,7 @@ if (today.getMonth() == 8 && today.getDate() == 18) {
     document.getElementById('birthday-info').classList.remove('text-muted');
     document.getElementById('birthday-info').classList.add('text-dark');
     document.getElementById('years-old').innerHTML = "It's my birthday! <i class='em em-confetti_ball'></i>";
+    confetti_party.start();
 }
 else {
     const years = days_between / 365;
