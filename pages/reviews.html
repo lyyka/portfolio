@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127707759-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-127707759-1');
+        </script>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="application-name" content="Portfolio website" />
+        <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
+        <meta name="title" content="Luka Robajac - Projects" />
+        <meta name="description" content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
+        <meta name="abstract" content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
+        <meta name="keywords" content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
+        <meta name="author" content="Luka Robajac" />
+        <meta name="revisit-after" content="2" />
+        <meta name="language" content="EN" />
+        <meta name="copyright" content="© 2019 Luka Robajac" />
+        <meta name="robots" content="All" />
+        <!-- OPENGRAPH -->
+        <meta property="og:title" content="Luka Robajac - Portfolio Projects" />
+        <meta property="og:description"
+          content="This is my portfolio website as a full stack web developer.
+          You will get to know me better and learn about what I do!" />
+        <meta property="og:image" content="https://lyyka.github.io/images/preview.png" />
+        <meta property="og:url" content="http://lyyka.github.io/portfolio" />
+        <meta property="og:type" content="portfolio" />
+        <meta property="og:determiner" content="the" />
+        <!-- TWITTER CARD -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@LRobajac" />
+        <meta name="twitter:image" content="https://lyyka.github.io/images/preview.png" />
+        <meta name="twitter:title" content="Luka Robajac - Portfolio Projects" />
+        <meta name="twitter:description" content="These are my projects as a full stack web developer.
+        You will get to know more about them and see my experience and knowledge!" />
+        <!-- end meta tags -->
+        <title>Luka Robajac - Full Stack web developer - Projects</title>
+        <!-- css -->
+        <!-- bootstrap -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+        <!-- emojis -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+        <!-- font awesome -->
+        <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous" />
+        <!-- master.css -->
+        <link rel="stylesheet" href="./../css/master.css" />
+        <!-- animate.css -->
+        <link rel="stylesheet" href="./../css/animate.css" />
+        <!-- menu.css -->
+        <link rel="stylesheet" href="./../css/menu.css" />
+        <!-- projects_list.css -->
+        <link rel="stylesheet" href="./../css/projects_list.css" />
+        <!-- notifications.css -->
+        <link rel="stylesheet" href="./../css/notifications.css" />
+    </head>
+    <body class="position-relative">
+        <div id="menu-wrap" class="w-100 h-100">
+            <div class="text-center p-5 m-5">
+                <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
+            </div>
+            <div class="container mt-5 mb-5" id="menu-inner">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h1 class="text-white text-center">Luka Robajac</h1>
+                        <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
+                        <hr class="bg-white w-50" />
+                        <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                        <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-white">luka.robajac@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html">
+                            <i class="fas mr-2 fa-home"></i> Home
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="#top">
+                            <i class="fas mr-2 fa-project-diagram"></i> Projects
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/reviews.html">
+                            <i class="fas mr-2 fa-star"></i> Reviews
+                        </a>
+                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html#social-media-section">
+                            <i class="fas mr-2 fa-hashtag"></i> Social media
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="notifications-wrap"></div>
+        <div class="m-3 cursor-pointer" id = "share-button">
+            <i class="fas fa-share-alt circle-icon text-white"></i>
+        </div>
+        <div class="container">
+            <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
+                <div class="container">
+                    <div class="mb-4 text-right cursor-pointer pt-3">
+                        <i class="fas fa-bars h4" id = "menu-open"></i>
+                    </div>
+                    <h2 class="mb-4">Reviews on my work <i class="em em-star2"></i></h2>
+                    <hr />
+                    <div class="review-card mb-5 mt-5">
+                        <p>
+                            <span class="h1 green-text">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            <span class="dgreen-text">
+                                Incredibly impressed with Luka's work. I had previously hired someone else, and after two days they had done work and not fixed the issue, Luka came in and fixed it within 20 minutes!!! Super impressed.
+
+                                Luka also understood exactly what I was looking for, and was an absolute pleasure to work with.
+                                
+                                Will definitely hire again.
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <strong>5.0</strong>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="review-card mb-5 mt-5">
+                        <p>
+                            <span class="h1 green-text">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            <span class="dgreen-text">
+                                Absolutely awesome work, yet again. Luka has done a bunch of work for me now, and I am always impressed.
+                                he thinks outside the box, nothing is ever too big or too small of an issue to work on. If I could give higher than a 5/5, I would.
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <strong>5.0</strong>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="review-card mb-5 mt-5">
+                        <p>
+                            <span class="h1 green-text">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            <span class="dgreen-text">
+                                Luka went above and beyond throughout my entire project and made sure the tasks were completed on time! He was available when I needed, he was professional and very knowledgable in the areas of expertise I needed for my project. On top of that he speaks and writes perfect English. I would recommend Luka 100% as a great freelancer! Thank you once again
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <strong>5.0</strong>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="review-card mb-5 mt-5">
+                        <p>
+                            <span class="h1 green-text">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            <span class="dgreen-text">
+                                As always, Luka has done an amazing job. Went above and beyond what was asked, used his own thoughts and common sense to make the site even better than outlined.
+                                can not recommend highly enough.
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <strong>5.0</strong>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="review-card mb-5 mt-5">
+                        <p>
+                            <span class="h1 green-text">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+                            <span class="dgreen-text">
+                                Luka is a very knowledgeable web designer and promptly answered any and all questions I had!
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <i class="fas fa-star green-text"></i>
+                            <strong>5.0</strong>
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="text-center">
+                        <a target="_blank" href="https://www.upwork.com/o/profiles/users/_~01770946482157855f/" class="green-text">
+                            View more on UpWork
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <p class="text-center">
+                        <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
+                        <br />
+                        &copy; Luka Robajac <span id = 'year'></span>
+                        <script>
+                            document.getElementById('year').innerText = (new Date()).getFullYear();
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- javascript -->
+        <script src = './../js/scroll.js'></script>
+        <script src = './../js/menu.js'></script>
+        <script src = './../js/notifications.js'></script>
+        <script src = './../js/sharing.js'></script>
+    </body>
+</html>
