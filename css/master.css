@@ -59,6 +59,9 @@ body{
 .green-bg{
     background-color: #76BA1B !important;
 }
+.gray-bg{
+  background-color: #e6e6e6 !important;
+}
 .dgreen-text{
     color: #1E5631 !important;
 }
