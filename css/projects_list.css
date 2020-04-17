@@ -2,3 +2,22 @@
     height: 200px;
     object-fit: scale-down;
 }
+
+.card-content > div{
+    width: 100%;
+}
+
+.card-content > div > a{
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    text-align: center;
+}
+.card-content > div > a:hover{
+    text-decoration: none;
+}
+.card-content > div > a.green-bg:hover{
+    background-color: rgb(81, 129, 18) !important;
+}
+
+.card-content > div > p{
+    margin-bottom: 2rem;
+}
