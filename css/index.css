@@ -15,9 +15,10 @@
     display: none;
 }
 
-.social-media-button:hover{
+.socials-btns:hover{
     color: #262626 !important;
 }
+
 @media screen and (max-width: 1024px){
     #profile_photo{
         width: 140px;
