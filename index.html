@@ -108,8 +108,37 @@
         <div id="notifications-wrap"></div>
 
         <!-- share btn -->
-        <div class="m-3 cursor-pointer" id = "share-button">
+        <!-- <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
+        </div> -->
+
+        <!-- Bottom part -->
+        <div id = 'bottom-part'>
+            <p class = 'text-right'>
+                <i id = 'share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
+            </p>
+            <br />
+            <div class = 'border-top py-3 d-lg-none d-block bg-white'>
+                <div class = 'row'>
+                    <div class = 'col-4 text-center border-right'>
+                        <a class = 'text-dark' href="./pages/projects_list.html">
+                            Projects
+                        </a>
+                    </div>
+                    
+                    <div class = 'col-4 text-center border-right'>
+                        <a class = 'green-text' href="javascript:void(0);">
+                            Home
+                        </a>
+                    </div>
+
+                    <div class='col-4 text-center'>
+                        <a class = 'text-dark' href="./pages/reviews.html">
+                            Reviews
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- rest of the page -->
@@ -118,8 +147,17 @@
                 <!-- top section -->
                 <section id = 'top-section' class = 'pt-3'>
                     <div class="container">
-                        <div class="mb-4 text-right cursor-pointer">
-                            <i class="fas fa-bars h4" id = "menu-open"></i>
+                        <div class="mb-4 text-right">
+                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="./pages/projects_list.html">
+                                <i class="fas mr-2 fa-project-diagram"></i> Projects
+                            </a>
+                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="./pages/reviews.html">
+                                <i class="fas mr-2 fa-star"></i> Reviews
+                            </a>
+                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="#social-media-section">
+                                <i class="fas mr-2 fa-hashtag"></i> Social media
+                            </a>
+                            <i class="d-inline-block d-lg-none cursor-pointer fas fa-bars h4" id = "menu-open"></i>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 mb-5">

@@ -32,15 +32,29 @@ body{
     line-height: 60px;
     vertical-align: middle;
 }
-#share-button{
+
+
+#bottom-part{
     z-index: 99;
     position: fixed;
     bottom: 0;
     right: 0;
+    width: 100%;
 }
-#share-button > i.fas{
+#bottom-part i.fas{
     background-color: #1E5631;
 }
+
+
+/* #share-button{
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+/* #share-button > i.fas{
+    background-color: #1E5631;
+} */
 
 /* ALIGNMENT */
 /* must be absolutely positioned first with position-absolute BS class */
