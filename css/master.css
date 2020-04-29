@@ -66,6 +66,10 @@ body{
     transform: translate(-50%, -50%);
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 /* COLORS */
 .green-text{
     color: #76BA1B !important;
@@ -84,6 +88,12 @@ body{
 }
 .b-top-green{
     border-top: 5px solid #76BA1B !important;
+}
+.lblue-bg{
+  background-color: #14BFF4;
+}
+.lblue-text{
+  color: #14BFF4 !important;
 }
 
 /* SCROLLBAR */
