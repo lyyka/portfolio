@@ -1,427 +1,487 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-    <head>
-        <!-- meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="application-name" content="Portfolio website" />
-        <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
-        <meta name="title" content="Luka Robajac - Projects" />
-        <meta name="description" content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
-        <meta name="abstract" content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
-        <meta name="keywords" content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
-        <meta name="author" content="Luka Robajac" />
-        <meta name="revisit-after" content="2" />
-        <meta name="language" content="EN" />
-        <meta name="copyright" content="© 2019 Luka Robajac" />
-        <meta name="robots" content="All" />
-        <!-- OPENGRAPH -->
-        <meta property="og:title" content="Luka Robajac - Portfolio Projects" />
-        <meta property="og:description"
-          content="This is my portfolio website as a full stack web developer.
-          You will get to know me better and learn about what I do!" />
-        <meta property="og:image" content="https://lyyka.github.io/images/preview.png" />
-        <meta property="og:url" content="http://lyyka.github.io/portfolio" />
-        <meta property="og:type" content="portfolio" />
-        <meta property="og:determiner" content="the" />
-        <!-- TWITTER CARD -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@LRobajac" />
-        <meta name="twitter:image" content="https://lyyka.github.io/images/preview.png" />
-        <meta name="twitter:title" content="Luka Robajac - Portfolio Projects" />
-        <meta name="twitter:description" content="These are my projects as a full stack web developer.
-        You will get to know more about them and see my experience and knowledge!" />
-        <!-- end meta tags -->
-        <title>Luka Robajac - Full Stack web developer - Projects</title>
-        <!-- css -->
-        <!-- bootstrap -->
-        <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous" />
-        <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-        <!-- emojis -->
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
-        <!-- font awesome -->
-        <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous" />
-        <!-- master.css -->
-        <link rel="stylesheet" href="./../css/master.css" />
-        <!-- animate.css -->
-        <link rel="stylesheet" href="./../css/animate.css" />
-        <!-- menu.css -->
-        <link rel="stylesheet" href="./../css/menu.css" />
-        <!-- projects_list.css -->
-        <link rel="stylesheet" href="./../css/projects_list.css" />
-        <!-- notifications.css -->
-        <link rel="stylesheet" href="./../css/notifications.css" />
-    </head>
-    <body class="position-relative">
-        <div id="menu-wrap" class="w-100 h-100">
-            <div class="text-center p-5 m-5">
-                <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
-            </div>
-            <div class="container mt-5 mb-5" id="menu-inner">
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <h1 class="text-white text-center">Luka Robajac</h1>
-                        <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
-                        <hr class="bg-white w-50" />
-                        <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
-                        <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-white">luka.robajac@gmail.com</a></p>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html">
-                            <i class="fas mr-2 fa-home"></i> Home
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="#top">
-                            <i class="fas mr-2 fa-project-diagram"></i> Projects
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="./reviews.html">
-                            <i class="fas mr-2 fa-star"></i> Reviews
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="../index.html#social-media-section">
-                            <i class="fas mr-2 fa-hashtag"></i> Social media
-                        </a>
-                    </div>
-                </div>
 
-            </div>
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="application-name" content="Portfolio website" />
+    <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
+    <meta name="title" content="Luka Robajac - Projects" />
+    <meta name="description"
+        content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
+    <meta name="abstract"
+        content="On this page you can see all projects I worked on. You will surely get a better insight on my skills after viewing this!" />
+    <meta name="keywords"
+        content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
+    <meta name="author" content="Luka Robajac" />
+    <meta name="revisit-after" content="2" />
+    <meta name="language" content="EN" />
+    <meta name="copyright" content="© 2019 Luka Robajac" />
+    <meta name="robots" content="All" />
+    <!-- OPENGRAPH -->
+    <meta property="og:title" content="Luka Robajac - Portfolio Projects" />
+    <meta property="og:description" content="This is my portfolio website as a full stack web developer.
+          You will get to know me better and learn about what I do!" />
+    <meta property="og:image" content="https://lyyka.github.io/images/preview.png" />
+    <meta property="og:url" content="http://lyyka.github.io/portfolio" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:determiner" content="the" />
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@LRobajac" />
+    <meta name="twitter:image" content="https://lyyka.github.io/images/preview.png" />
+    <meta name="twitter:title" content="Luka Robajac - Portfolio Projects" />
+    <meta name="twitter:description" content="These are my projects as a full stack web developer.
+        You will get to know more about them and see my experience and knowledge!" />
+    <!-- end meta tags -->
+    <title>Luka Robajac - Full Stack web developer - Projects</title>
+    <!-- css -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <!-- master.css -->
+    <link rel="stylesheet" href="./../css/master.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./../css/animate.css" />
+    <!-- menu.css -->
+    <link rel="stylesheet" href="./../css/menu.css" />
+    <!-- projects_list.css -->
+    <link rel="stylesheet" href="./../css/projects_list.css" />
+    <!-- notifications.css -->
+    <link rel="stylesheet" href="./../css/notifications.css" />
+</head>
+
+<body class="position-relative">
+    <div id="menu-wrap" class="w-100 h-100">
+        <div class="text-center p-5 m-5">
+            <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
         </div>
-        <div id="notifications-wrap"></div>
-        <!-- <div class="m-3 cursor-pointer" id = "share-button">
+        <div class="container mt-5 mb-5" id="menu-inner">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h1 class="text-white text-center">Luka Robajac</h1>
+                    <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
+                    <hr class="bg-white w-50" />
+                    <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                    <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a
+                            href="mailto:luka.robajac@gmail.com" target="_blank"
+                            class="text-white">luka.robajac@gmail.com</a></p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <a class="d-block mb-3 green-text h5 menu-item" href="../index.html">
+                        <i class="fas mr-2 fa-home"></i> Home
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="#top">
+                        <i class="fas mr-2 fa-project-diagram"></i> Projects
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="./reviews.html">
+                        <i class="fas mr-2 fa-star"></i> Reviews
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="../index.html#social-media-section">
+                        <i class="fas mr-2 fa-hashtag"></i> Social media
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="notifications-wrap"></div>
+    <!-- <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div> -->
-        <div id='bottom-part'>
-            <p class='text-right mb-0'>
-                <i id = 'share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
-            </p>
-            <br />
-            <div class='border-top py-3 d-lg-none d-block bg-white'>
+    <div id='bottom-part'>
+        <p class='text-right mb-0'>
+            <i id='share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
+        </p>
+        <br />
+        <div class='border-top py-3 d-lg-none d-block bg-white'>
+            <div class='row'>
+                <div class='col-4 text-center border-right'>
+                    <a class='green-text' href="javascript:void(0);">
+                        Projects
+                    </a>
+                </div>
+
+                <div class='col-4 text-center border-right'>
+                    <a class='text-dark' href="./../index.html">
+                        Home
+                    </a>
+                </div>
+
+                <div class='col-4 text-center'>
+                    <a class='text-dark' href="reviews.html">
+                        Reviews
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
+            <div class="container">
+                <div class="mb-4 text-right pt-3">
+                    <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                        href="./../index.html">
+                        <i class="fas mr-2 fa-home"></i> Home
+                    </a>
+                    <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                        href="javascript:void(0);">
+                        <i class="fas mr-2 fa-project-diagram"></i> Projects
+                    </a>
+                    <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                        href="reviews.html">
+                        <i class="fas mr-2 fa-star"></i> Reviews
+                    </a>
+                    <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                        href="./../index.html#social-media-section">
+                        <i class="fas mr-2 fa-hashtag"></i> Social media
+                    </a>
+                    <i class="d-inline-block d-lg-none fas fa-bars cursor-pointer h4" id="menu-open"></i>
+                </div>
+                <h2 class="mb-4">List of my projects <i class="em em-male-construction-worker"></i></h2>
+                <hr />
+                <h3 class='mb-5 mt-5 text-center' id='work-heading'>Work</h3>
+                <!-- ROW 1 -->
+                <div class="row">
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/perfectdecorshop.jpg" class="card-cover-image w-100"
+                                alt="PerfectDecor Shop" />
+                            <div class="px-3 py-4">
+                                <h5>E-commerce website</h5>
+                                <p class="text-muted">Online store for selling toddler equipment, clothes, etc. Includes
+                                    rich administartor
+                                    panel and integrated payment connected directly with bank.</p>
+                                <a href="https://www.perfectdecorshop.rs" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/nistours.png" class="card-cover-image w-100"
+                                alt="Tour booking website" />
+                            <div class="px-3 py-4">
+                                <h5>Tour Booking Website</h5>
+                                <p class="text-muted">On this website you are able to browse tours of my city, and if
+                                    you happen to like one, you can easily book the tour!</p>
+                                <a href="https://www.niswalkingtours.com" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/sheffield_rooms.png" class="card-cover-image w-100"
+                                alt="Sheffield Rooms" />
+                            <div class="px-3 py-4">
+                                <h5>Property Renting Website</h5>
+                                <p class="text-muted">Users upload properties to rent and people can browse, view and
+                                    live chat with landlords!</p>
+                                <a href="https://www.sheffieldrooms.com" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="row">
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/amiamonster.jpg" class="card-cover-image w-100"
+                                alt="Am I a Monster?" />
+                            <div class="px-3 py-4">
+                                <h5>Band Promotion Website</h5>
+                                <p class="text-muted">Users can take a picture or upload one, and get their own filtered
+                                    image with band's signature on it for them to share on social media.</p>
+                                <a href="https://www.amiamonster.com" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/houseprice-NZ.png" class="card-cover-image w-100"
+                                alt="Property Estimate - NZ" />
+                            <div class="px-3 py-4 h-100">
+                                <h5>Property Estimate - NZ</h5>
+                                <p class="text-muted">This website enables people put in their property details and
+                                    reach out to real estate
+                                    agents.</p>
+                                <a href="https://www.houseprice.co.nz" target="_blank"
+                                    class="text-center p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/handyhelp.png" class="card-cover-image w-100" alt="Contractor hiring website" />
+                            <div class="px-3 py-4">
+                                <h5>Contractor Hiring Website</h5>
+                                <p class="text-muted">Website that enables contractors and clients get in touch. It
+                                    enables clients to hire contractors.</p>
+                                <a href="#work-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not
+                                    available</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 3 -->
                 <div class='row'>
-                    <div class='col-4 text-center border-right'>
-                        <a class='green-text' href="javascript:void(0);">
-                            Projects
-                        </a>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/houseprice-US.png" class="card-cover-image w-100"
+                                alt="Property Estimate - US" />
+                            <div class="px-3 py-4">
+                                <h5>Property Estimate - US</h5>
+                                <p class="text-muted">This website enables people put in their property details and
+                                    reach out to real estate
+                                    agents.</p>
+                                <a href="#work-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not
+                                    available</a>
+                            </div>
+                        </div>
                     </div>
-        
-                    <div class='col-4 text-center border-right'>
-                        <a class='text-dark' href="./../index.html">
-                            Home
-                        </a>
-                    </div>
-        
-                    <div class='col-4 text-center'>
-                        <a class='text-dark' href="reviews.html">
-                            Reviews
-                        </a>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/falco.png" class="card-cover-image w-100"
+                                alt="Company website" />
+                            <div class="px-3 py-4">
+                                <h5>Security Company Website</h5>
+                                <p class="text-muted">I was a back-end guy on this project which consisted of creating a
+                                    website for a
+                                    company displaying their products!</p>
+                                <a href="#work-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not
+                                    available</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="border shadow-sm rounded p-3 my-5 mx-3 bg-white b-top-green">
-                <div class="container">
-                    <div class="mb-4 text-right pt-3">
-                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
-                            href="./../index.html">
-                            <i class="fas mr-2 fa-home"></i> Home
-                        </a>
-                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
-                            href="javascript:void(0);">
-                            <i class="fas mr-2 fa-project-diagram"></i> Projects
-                        </a>
-                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
-                            href="reviews.html">
-                            <i class="fas mr-2 fa-star"></i> Reviews
-                        </a>
-                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
-                            href="./../index.html#social-media-section">
-                            <i class="fas mr-2 fa-hashtag"></i> Social media
-                        </a>
-                        <i class="d-inline-block d-lg-none fas fa-bars cursor-pointer h4" id = "menu-open"></i>
-                    </div>
-                    <h2 class="mb-4">List of my projects <i class="em em-male-construction-worker"></i></h2>
-                    <hr />
-                    <h3 class = 'mb-5 mt-5 text-center' id = 'work-heading'>Work</h3>
-                    <!-- ROW 1 -->
-                    <div class="row">
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/handyhelp.png" class="card-cover-image w-100" alt="Contractor hiring website" />
-                                <div class="px-3 py-4">
-                                    <h5>Contractor Hiring Website</h5>
-                                    <p class="text-muted">Website that enables contractors and clients get in touch. It enables clients to hire contractors.</p>
-                                    <a href="#work-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not available</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/nistours.png" class="card-cover-image w-100" alt="Tour booking website" />
-                                <div class="px-3 py-4">
-                                    <h5>Tour Booking Website</h5>
-                                    <p class="text-muted">On this website you are able to browse tours of my city, and if you happen to like one, you can easily book the tour!</p>
-                                    <a href="https://www.niswalkingtours.com" target="_blank" class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/sheffield_rooms.png" class="card-cover-image w-100" alt="Sheffield Rooms" />
-                                <div class="px-3 py-4">
-                                    <h5>Property Renting Website</h5>
-                                    <p class="text-muted">Users upload properties to rent and people can browse, view and live chat with landlords!</p>
-                                    <a href="https://www.sheffieldrooms.com" target="_blank" class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW 2 -->
-                    <div class="row">
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/perfectdecorshop.jpg" class="card-cover-image w-100" alt="PerfectDecor Shop" />
-                                <div class="px-3 py-4">
-                                    <h5>E-commerce website</h5>
-                                    <p class="text-muted">Online store for selling toddler equipment, clothes, etc. Includes rich administartor
-                                        panel and integrated payment connected directly with bank.</p>
-                                    <a href="https://www.perfectdecorshop.rs" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/amiamonster.jpg" class="card-cover-image w-100" alt="Am I a Monster?" />
-                                <div class="px-3 py-4">
-                                    <h5>Band Promotion Website</h5>
-                                    <p class="text-muted">Users can take a picture or upload one, and get their own filtered image with band's signature on it for them to share on social media.</p>
-                                    <a href="https://www.amiamonster.com" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/houseprice-NZ.png" class="card-cover-image w-100" alt="Property Estimate - NZ" />
-                                <div class="px-3 py-4 h-100">
-                                    <h5>Property Estimate - NZ</h5>
-                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate
-                                        agents.</p>
-                                    <a href="https://www.houseprice.co.nz" target="_blank"
-                                        class="text-center p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW 3 -->
-                    <div class = 'row'>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/houseprice-US.png" class="card-cover-image w-100" alt="Property Estimate - US" />
-                                <div class="px-3 py-4">
-                                    <h5>Property Estimate - US</h5>
-                                    <p class="text-muted">This website enables people put in their property details and reach out to real estate
-                                        agents.</p>
-                                    <a href="https://www.housepricehq.com" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/falco.png" class="card-cover-image w-100" alt="Company website" />
-                                <div class="px-3 py-4">
-                                    <h5>Security Company Website</h5>
-                                    <p class="text-muted">I was a back-end guy on this project which consisted of creating a website for a
-                                        company displaying their products!</p>
-                                    <a href="#work-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not available</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
+                <hr />
 
-                    <!-- PERSONAL -->
-                    <h3 class = 'mb-5 mt-5 text-center' id = 'personals-heading'>Personal</h3>
-                    <!-- ROW 1 -->
-                    <div class="row">
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <video class="card-cover-image w-100" controls>
-                                    <source src="../images/projects/housebudget_video.mp4" type="video/mp4" />
-                                    Your browser does not support video
-                                </video>
-                                <div class="px-3 py-4">
-                                    <h5>House Budget Manager</h5>
-                                    <p class="text-muted">Laravel app that allows management of your household and provides in depth insights in
-                                        your expenses!</p>
-                                    <a href="https://www.github.com/lyyka/house-budget-app/" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/yt-sync.png" class="card-cover-image w-100" alt="Synchronized video playing" />
-                                <div class="px-3 py-4">
-                                    <h5>Synced video playing</h5>
-                                    <p class="text-muted">Website that allows for multiple users to connect and watch videos synchronized together!</p>
-                                    <a href="#personals-heading" class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not available</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/brainstorm.png" class="card-cover-image w-100" alt="E-brainstorming" />
-                                <div class="px-3 py-4">
-                                    <h5>E-brainstorming App</h5>
-                                    <p class="text-muted">This app allows users to connect to rooms and have their own brainstorming session, with tons of features to make it fun.</p>
-                                    <a href="http://e-brainstorm.herokuapp.com" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i class="fas fa-external-link-alt"></i></a>
-                                </div>
+                <!-- PERSONAL -->
+                <h3 class='mb-5 mt-5 text-center' id='personals-heading'>Personal</h3>
+                <!-- ROW 1 -->
+                <div class="row">
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <video class="card-cover-image w-100" controls>
+                                <source src="../images/projects/housebudget_video.mp4" type="video/mp4" />
+                                Your browser does not support video
+                            </video>
+                            <div class="px-3 py-4">
+                                <h5>House Budget Manager</h5>
+                                <p class="text-muted">Laravel app that allows management of your household and provides
+                                    in depth insights in
+                                    your expenses!</p>
+                                <a href="https://www.github.com/lyyka/house-budget-app/" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!-- ROW 2 -->
-                    <div class="row">
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/time-tracker.jpg" class="card-cover-image w-100" alt="Board game" />
-                                <div class="px-3 py-4">
-                                    <h5>Time tracker app</h5>
-                                    <p class="text-muted">Desktop app used for advanced time tracking while working. You can export/send reports of time tracked, graph the time/earnings, etc.</p>
-                                    <a href="https://www.github.com/lyyka/time-tracker/" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/board-game.png" class="card-cover-image w-100" alt="Board game" />
-                                <div class="px-3 py-4">
-                                    <h5>Board game</h5>
-                                    <p class="text-muted">Simple board game between two players. Players choose their character, pick up power
-                                        ups and fight!</p>
-                                    <a href="https://lyyka.github.io/board-game/" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <video class="card-cover-image w-100" controls>
-                                    <source src="../images/projects/snake_game_video.mp4" type="video/mp4" />
-                                    Your browser does not support video
-                                </video>
-                                <div class="px-3 py-4">
-                                    <h5>Snake Game</h5>
-                                    <p class="text-muted">Classic snake game coded in C# .NET Framework in Windows Forms.</p>
-                                    <a href="https://github.com/lyyka/snake-game" target="_blank" class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- ROW 3 -->
-                    <div class="row">
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/paint.png" class="card-cover-image w-100" alt="Paint app" />
-                                <div class="px-3 py-4">
-                                    <h5>Paint App</h5>
-                                    <p class="text-muted">Simple paint desktop app made in C#. Allows for basic paint usage and file saving.</p>
-                                    <a href="https://github.com/lyyka/paint" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/face_rec_emoji.jpg" class="card-cover-image w-100"
-                                    alt="Face recognition with emojis" />
-                                <div class="px-3 py-4">
-                                    <h5>Facial recognition</h5>
-                                    <p class="text-muted">
-                                        Fun little app made using Python and opencv-python that detects faces from live web camera feed and can
-                                        frame them, blur them, or even put emojis over them!
-                                    </p>
-                                    <a href="https://github.com/lyyka/facial-recognition-emoji" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/folder-locker.png" class="card-cover-image w-100" alt="Windows Folder Locker" />
-                                <div class="px-3 py-4">
-                                    <h5>Windows Folder Locker</h5>
-                                    <p class="text-muted">Windows console app coded in C# that is used to hide all folders in selected drive with a password.</p>
-                                    <a href="https://github.com/lyyka/FolderLocker" target="_blank" class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- ROW 4 -->
-                    <div class = 'row'>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/contacts-app.png" class="card-cover-image w-100" alt="Contacts management app" />
-                                <div class="px-3 py-4">
-                                    <h5>Contacts Management App</h5>
-                                    <p class="text-muted">App that helps with contact management. Very simple, but helped me learn NodeJS and
-                                        MongoDB.</p>
-                                    <a href="https://github.com/lyyka/contacts-app-js" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 mb-5">
-                            <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
-                                <img src="../images/projects/countdown-timer.png" class="card-cover-image w-100" alt="Countdown Timer" />
-                                <div class="px-3 py-4">
-                                    <h5>Countdown Timer</h5>
-                                    <p class="text-muted">JavaScript app that can count time down to a certain event you set.</p>
-                                    <a href="https://lyyka.github.io/Countdown-Timer/" target="_blank"
-                                        class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
-                                            class="fas fa-external-link-alt"></i></a>
-                                </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/yt-sync.png" class="card-cover-image w-100"
+                                alt="Synchronized video playing" />
+                            <div class="px-3 py-4">
+                                <h5>Synced video playing</h5>
+                                <p class="text-muted">Website that allows for multiple users to connect and watch videos
+                                    synchronized together!</p>
+                                <a href="#personals-heading"
+                                    class="p-2 rounded-bottom shadow-sm bg-secondary text-white">Not available</a>
                             </div>
                         </div>
                     </div>
-
-
-                    <p class="text-center">
-                        <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
-                        <br />
-                        &copy; Luka Robajac <span id = 'year'></span>
-                        <script>
-                            document.getElementById('year').innerText = (new Date()).getFullYear();
-                        </script>
-                    </p>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/brainstorm.png" class="card-cover-image w-100"
+                                alt="E-brainstorming" />
+                            <div class="px-3 py-4">
+                                <h5>E-brainstorming App</h5>
+                                <p class="text-muted">This app allows users to connect to rooms and have their own
+                                    brainstorming session, with tons of features to make it fun.</p>
+                                <a href="http://e-brainstorm.herokuapp.com" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- ROW 2 -->
+                <div class="row">
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/synced-drawing.jpg" class="card-cover-image w-100"
+                                alt="Synced drawing app" />
+                            <div class="px-3 py-4">
+                                <h5>Synced drawing app</h5>
+                                <p class="text-muted">Web application that allows users to connect to rooms and draw on
+                                    a synchronized board between them. Includes messaging and users system.</p>
+                                <a href="https://www.github.com/lyyka/time-tracker/" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/time-tracker.jpg" class="card-cover-image w-100"
+                                alt="Time tracker app" />
+                            <div class="px-3 py-4">
+                                <h5>Time tracker app</h5>
+                                <p class="text-muted">Desktop app used for advanced time tracking while working. You can
+                                    export/send reports of time tracked, graph the time/earnings, etc.</p>
+                                <a href="https://www.github.com/lyyka/time-tracker/" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/board-game.png" class="card-cover-image w-100"
+                                alt="Board game" />
+                            <div class="px-3 py-4">
+                                <h5>Board game</h5>
+                                <p class="text-muted">Simple board game between two players. Players choose their
+                                    character, pick up power
+                                    ups and fight!</p>
+                                <a href="https://lyyka.github.io/board-game/" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <div class="row">
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <video class="card-cover-image w-100" controls>
+                                <source src="../images/projects/snake_game_video.mp4" type="video/mp4" />
+                                Your browser does not support video
+                            </video>
+                            <div class="px-3 py-4">
+                                <h5>Snake Game</h5>
+                                <p class="text-muted">Classic snake game coded in C# .NET Framework in Windows Forms.
+                                </p>
+                                <a href="https://github.com/lyyka/snake-game" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/paint.png" class="card-cover-image w-100" alt="Paint app" />
+                            <div class="px-3 py-4">
+                                <h5>Paint App</h5>
+                                <p class="text-muted">Simple paint desktop app made in C#. Allows for basic paint usage
+                                    and file saving.</p>
+                                <a href="https://github.com/lyyka/paint" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/face_rec_emoji.jpg" class="card-cover-image w-100"
+                                alt="Face recognition with emojis" />
+                            <div class="px-3 py-4">
+                                <h5>Facial recognition</h5>
+                                <p class="text-muted">
+                                    Fun little app made using Python and opencv-python that detects faces from live web
+                                    camera feed and can
+                                    frame them, blur them, or even put emojis over them!
+                                </p>
+                                <a href="https://github.com/lyyka/facial-recognition-emoji" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 4 -->
+                <div class='row'>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/folder-locker.png" class="card-cover-image w-100"
+                                alt="Windows Folder Locker" />
+                            <div class="px-3 py-4">
+                                <h5>Windows Folder Locker</h5>
+                                <p class="text-muted">Windows console app coded in C# that is used to hide all folders
+                                    in selected drive
+                                    with a password.</p>
+                                <a href="https://github.com/lyyka/FolderLocker" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/contacts-app.png" class="card-cover-image w-100"
+                                alt="Contacts management app" />
+                            <div class="px-3 py-4">
+                                <h5>Contacts Management App</h5>
+                                <p class="text-muted">App that helps with contact management. Very simple, but helped me
+                                    learn NodeJS and
+                                    MongoDB.</p>
+                                <a href="https://github.com/lyyka/contacts-app-js" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">GitHub <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-5">
+                        <div class="border rounded shadow-sm bg-white h-100 position-relative card-content">
+                            <img src="../images/projects/countdown-timer.png" class="card-cover-image w-100"
+                                alt="Countdown Timer" />
+                            <div class="px-3 py-4">
+                                <h5>Countdown Timer</h5>
+                                <p class="text-muted">JavaScript app that can count time down to a certain event you
+                                    set.</p>
+                                <a href="https://lyyka.github.io/Countdown-Timer/" target="_blank"
+                                    class="p-2 rounded-bottom shadow-sm green-bg text-white">Visit <i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="text-center">
+                    <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id='scroll-top'></i>
+                    <br />
+                    &copy; Luka Robajac <span id='year'></span>
+                    <script>
+                        document.getElementById('year').innerText = (new Date()).getFullYear();
+                    </script>
+                </p>
             </div>
         </div>
-        <!-- javascript -->
-        <script src = './../js/scroll.js'></script>
-        <script src = './../js/menu.js'></script>
-        <script src = './../js/notifications.js'></script>
-        <script src = './../js/sharing.js'></script>
-    </body>
+    </div>
+    <!-- javascript -->
+    <script src='./../js/scroll.js'></script>
+    <script src='./../js/menu.js'></script>
+    <script src='./../js/notifications.js'></script>
+    <script src='./../js/sharing.js'></script>
+</body>
+
 </html>

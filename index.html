@@ -1,316 +1,367 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
-    <head>
-        <!-- meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="application-name" content="Portfolio website" />
-        <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
-        <meta name="title" content="Luka Robajac - Portfolio" />
-        <meta name="description" content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
-        <meta name="abstract" content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
-        <meta name="keywords" content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
-        <meta name="author" content="Luka Robajac" />
-        <meta name="revisit-after" content="2" />
-        <meta name="language" content="EN" />
-        <meta name="copyright" content="© 2019 Luka Robajac" />
-        <meta name="robots" content="All" />
-        <!-- OPENGRAPH -->
-        <meta property="og:site_name" content="Luka Robajac - Portfolio Website" />
-        <meta property="og:title" content="Luka Robajac - Portfolio Website" />
-        <meta property="og:description"
-          content="This is my portfolio website as a full stack web developer.
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="application-name" content="Portfolio website" />
+    <meta name="identifier-url" content="http://lyyka.github.io/portfolio" />
+    <meta name="title" content="Luka Robajac - Portfolio" />
+    <meta name="description"
+        content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
+    <meta name="abstract"
+        content="Welcome to my portfolio website. Here you will get to know me better as a developer and view all my awesome projects!" />
+    <meta name="keywords"
+        content="lyyka,portfolio,web,web development,php,laravel,back end,programming,freelance,websites,personal websites,about,luka robajac,luka,robajac" />
+    <meta name="author" content="Luka Robajac" />
+    <meta name="revisit-after" content="2" />
+    <meta name="language" content="EN" />
+    <meta name="copyright" content="© 2019 Luka Robajac" />
+    <meta name="robots" content="All" />
+    <!-- OPENGRAPH -->
+    <meta property="og:site_name" content="Luka Robajac - Portfolio Website" />
+    <meta property="og:title" content="Luka Robajac - Portfolio Website" />
+    <meta property="og:description" content="This is my portfolio website as a full stack web developer.
           You will get to know me better and learn about what I do!" />
-        <meta property="og:image" content="./images/preview.png" />
-        <!-- <meta property="og:url" content="http://lyyka.github.io/portfolio" /> -->
-        <meta property="og:type" content="website" />
-        <meta property="og:determiner" content="the" />
-        <!-- TWITTER CARD -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@LRobajac" />
-        <meta name="twitter:site" content="@LRobajac" />
-        <meta name="twitter:image" content="./images/preview.png" />
-        <meta name="twitter:title" content="Luka Robajac - Portfolio Website" />
-        <meta name="twitter:description" content="This is my portfolio website as a full stack web developer.
+    <meta property="og:image" content="./images/preview.png" />
+    <!-- <meta property="og:url" content="http://lyyka.github.io/portfolio" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:determiner" content="the" />
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@LRobajac" />
+    <meta name="twitter:site" content="@LRobajac" />
+    <meta name="twitter:image" content="./images/preview.png" />
+    <meta name="twitter:title" content="Luka Robajac - Portfolio Website" />
+    <meta name="twitter:description" content="This is my portfolio website as a full stack web developer.
         You will get to know me better and learn about what I do!" />
-        <!-- end meta tags -->
-        <title>Luka Robajac - Full Stack web developer - Portfolio</title>
-        <!-- css -->
-        <!-- bootstrap -->
-        <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous" />
-        <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-        <!-- emojis -->
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/9122b51f87.js" crossorigin="anonymous"></script>
-        <!-- master.css -->
-        <link rel="stylesheet" href="./css/master.css" />
-        <!-- animate.css -->
-        <link rel="stylesheet" href="./css/animate.css" />
-        <!-- menu.css -->
-        <link rel="stylesheet" href="./css/menu.css" />
-        <!-- index.css -->
-        <link rel="stylesheet" href="./css/index.css" />
-        <!-- notifications.css -->
-        <link rel="stylesheet" href="./css/notifications.css" />
-    </head>
-    <body class="position-relative">
-        <!-- confetti holder -->
-        <canvas id="confetti-holder" width="100%" height="100%">
-            This browser or document mode doesn't support canvas element
-        </canvas>
+    <!-- end meta tags -->
+    <title>Luka Robajac - Full Stack web developer - Portfolio</title>
+    <!-- css -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9122b51f87.js" crossorigin="anonymous"></script>
+    <!-- master.css -->
+    <link rel="stylesheet" href="./css/master.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- menu.css -->
+    <link rel="stylesheet" href="./css/menu.css" />
+    <!-- index.css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- notifications.css -->
+    <link rel="stylesheet" href="./css/notifications.css" />
+</head>
 
-        <!-- menu -->
-        <div id="menu-wrap" class="w-100 h-100">
-            <div class="text-center p-5 m-5">
-                <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
-            </div>
-            <div class="container mt-5 mb-5" id="menu-inner">
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <h1 class="text-white text-center">Luka Robajac</h1>
-                        <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
-                        <hr class="bg-white w-50" />
-                        <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
-                        <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-white">luka.robajac@gmail.com</a></p>
-                        <p class="green-text text-center mb-2">
-                            <i class="fas fa-briefcase"></i>
-                            <a href = "https://www.upwork.com/o/profiles/users/_~01770946482157855f/" target="_blank" class="green-text">
-                                UpWork Profile
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a class="d-block mb-3 green-text h5 menu-item" href="#top">
-                            <i class="fas mr-2 fa-home"></i> Home
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/projects_list.html">
-                            <i class="fas mr-2 fa-project-diagram"></i> Projects
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="./pages/reviews.html">
-                            <i class="fas mr-2 fa-star"></i> Reviews
-                        </a>
-                        <a class="d-block mb-3 green-text h5 menu-item" href="#social-media-section">
-                            <i class="fas mr-2 fa-hashtag"></i> Social media
-                        </a>
-                    </div>
-                </div>
+<body class="position-relative">
+    <!-- confetti holder -->
+    <canvas id="confetti-holder" width="100%" height="100%">
+        This browser or document mode doesn't support canvas element
+    </canvas>
 
-            </div>
+    <!-- menu -->
+    <div id="menu-wrap" class="w-100 h-100">
+        <div class="text-center p-5 m-5">
+            <p class="text-white cursor-pointer h5" id="menu-close"><i class="fas fa-times"></i></p>
         </div>
+        <div class="container mt-5 mb-5" id="menu-inner">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h1 class="text-white text-center">Luka Robajac</h1>
+                    <h2 class="text-white mb-4 text-center">Full-stack web developer.</h2>
+                    <hr class="bg-white w-50" />
+                    <p class="text-white text-center mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
+                    <p class="text-white text-center mb-2"><i class="far fa-envelope"></i> <a
+                            href="mailto:luka.robajac@gmail.com" target="_blank"
+                            class="text-white">luka.robajac@gmail.com</a></p>
+                    <p class="green-text text-center mb-2">
+                        <i class="fas fa-briefcase"></i>
+                        <a href="https://www.upwork.com/o/profiles/users/_~01770946482157855f/" target="_blank"
+                            class="green-text">
+                            UpWork Profile
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <a class="d-block mb-3 green-text h5 menu-item" href="#top">
+                        <i class="fas mr-2 fa-home"></i> Home
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="./pages/projects_list.html">
+                        <i class="fas mr-2 fa-project-diagram"></i> Projects
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="./pages/reviews.html">
+                        <i class="fas mr-2 fa-star"></i> Reviews
+                    </a>
+                    <a class="d-block mb-3 green-text h5 menu-item" href="#social-media-section">
+                        <i class="fas mr-2 fa-hashtag"></i> Social media
+                    </a>
+                </div>
+            </div>
 
-        <!-- wrapper for notifications -->
-        <div id="notifications-wrap"></div>
+        </div>
+    </div>
 
-        <!-- share btn -->
-        <!-- <div class="m-3 cursor-pointer" id = "share-button">
+    <!-- wrapper for notifications -->
+    <div id="notifications-wrap"></div>
+
+    <!-- share btn -->
+    <!-- <div class="m-3 cursor-pointer" id = "share-button">
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div> -->
 
-        <!-- Bottom part -->
-        <div id = 'bottom-part'>
-            <p class = 'text-right mb-0'>
-                <i id = 'share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
-            </p>
-            <br />
-            <div class = 'border-top py-3 d-lg-none d-block bg-white'>
-                <div class = 'row'>
-                    <div class = 'col-4 text-center border-right'>
-                        <a class = 'text-dark' href="./pages/projects_list.html">
-                            Projects
-                        </a>
-                    </div>
-                    
-                    <div class = 'col-4 text-center border-right'>
-                        <a class = 'green-text' href="javascript:void(0);">
-                            Home
-                        </a>
-                    </div>
+    <!-- Bottom part -->
+    <div id='bottom-part'>
+        <p class='text-right mb-0'>
+            <i id='share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
+        </p>
+        <br />
+        <div class='border-top py-3 d-lg-none d-block bg-white'>
+            <div class='row'>
+                <div class='col-4 text-center border-right'>
+                    <a class='text-dark' href="./pages/projects_list.html">
+                        Projects
+                    </a>
+                </div>
 
-                    <div class='col-4 text-center'>
-                        <a class = 'text-dark' href="./pages/reviews.html">
-                            Reviews
-                        </a>
-                    </div>
+                <div class='col-4 text-center border-right'>
+                    <a class='green-text' href="javascript:void(0);">
+                        Home
+                    </a>
+                </div>
+
+                <div class='col-4 text-center'>
+                    <a class='text-dark' href="./pages/reviews.html">
+                        Reviews
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- rest of the page -->
-        <div class="container">
-            <div class="border shadow-sm rounded p-3 mb-5 mt-4 mx-3 bg-white b-top-green">
-                <!-- top section -->
-                <section id = 'top-section' class = 'pt-3'>
-                    <div class="container">
-                        <div class="mb-4 text-right">
-                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="./pages/projects_list.html">
-                                <i class="fas mr-2 fa-project-diagram"></i> Projects
-                            </a>
-                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="./pages/reviews.html">
-                                <i class="fas mr-2 fa-star"></i> Reviews
-                            </a>
-                            <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item" href="#social-media-section">
-                                <i class="fas mr-2 fa-hashtag"></i> Social media
-                            </a>
-                            <i class="d-inline-block d-lg-none cursor-pointer fas fa-bars h4" id = "menu-open"></i>
+    <!-- rest of the page -->
+    <div class="container">
+        <div class="border shadow-sm rounded p-3 mb-5 mt-4 mx-3 bg-white b-top-green">
+            <!-- top section -->
+            <section id='top-section' class='pt-3'>
+                <div class="container">
+                    <div class="mb-4 text-right">
+                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                            href="./pages/projects_list.html">
+                            <i class="fas mr-2 fa-project-diagram"></i> Projects
+                        </a>
+                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                            href="./pages/reviews.html">
+                            <i class="fas mr-2 fa-star"></i> Reviews
+                        </a>
+                        <a class="d-none d-lg-inline-block mb-3 mr-3 rounded shadow-sm green-bg border px-3 py-2 text-white shadow-sm menu-item"
+                            href="#social-media-section">
+                            <i class="fas mr-2 fa-hashtag"></i> Social media
+                        </a>
+                        <i class="d-inline-block d-lg-none cursor-pointer fas fa-bars h4" id="menu-open"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 mb-5">
+                            <div id="profile_photo" class="rounded-circle"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 mb-5">
-                                <div id="profile_photo" class="rounded-circle"></div>
-                            </div>
-                            <div class="col-lg-8 mb-5">
-                                <h1 class = "h3 mb-3">Hello, I am Luka. <br />
-                                    A full-stack web developer.</h1>
-                                <p class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> Nis, Serbia</p>
-                                <p id = 'birthday-info' class="text-muted mb-2"><i class="fas fa-birthday-cake"></i> <span id = 'years-old'></span></p>
-                                <p class="text-muted mb-2"><i class="far fa-envelope"></i> <a href = "mailto:luka.robajac@gmail.com" target="_blank" class="text-muted">luka.robajac@gmail.com</a></p>
-                                <p class="green-text mb-2">
-                                    <i class="fas fa-briefcase"></i>
-                                    <a href = "https://www.upwork.com/o/profiles/users/_~01770946482157855f/" target="_blank" class="green-text">
+                        <div class="col-lg-8 mb-5">
+                            <h1 class="h3 mb-3">Hello, I am Luka. <br />
+                                A full-stack web developer.</h1>
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Nis, Serbia</span>
+                            </p>
+                            <p id='birthday-info' class="text-muted mb-2">
+                                <i class="fas fa-birthday-cake mr-2"></i>
+                                <span id='years-old'></span>
+                            </p>
+                            <p class="text-dark mb-2">
+                                <i class="far fa-envelope mr-2"></i>
+                                <a href="mailto:luka.robajac@gmail.com" target="_blank" class="text-dark">luka.robajac@gmail.com</a>
+                            </p>
+                            <p class="text-dark  mb-2">
+                                <strong>
+                                    <i class="fab fa-github mr-2"></i>
+                                    <a href="https://www.upwork.com/o/profiles/users/_~01770946482157855f/"
+                                        target="_blank" class="text-dark">
+                                        GitHub
+                                    </a>
+                                </strong>
+                            </p>
+                            <p class="green-text mb-2">
+                                <strong>
+                                    <i class="fas fa-briefcase mr-2"></i>
+                                    <a href="https://www.upwork.com/o/profiles/users/_~01770946482157855f/"
+                                        target="_blank" class="green-text">
                                         UpWork Profile
                                     </a>
-                                </p>
-                            </div>
+                                </strong>
+                            </p>
                         </div>
-                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Flyyka.github.io%2Fportfolio&layout=button&size=large&width=74&height=28&appId" width="74" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                        <a id ='twt-share' class="twitter-share-button"
-                          href="https://twitter.com/intent/tweet?text=Look%20at%20this%20awesome%20web%20developer!"
-                          data-size="large">
+                    </div>
+                    <iframe
+                        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Flyyka.github.io%2Fportfolio&layout=button&size=large&width=74&height=28&appId"
+                        width="74" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+                    <a id='twt-share' class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=Look%20at%20this%20awesome%20web%20developer!"
+                        data-size="large">
                         Tweet</a>
-                        <hr />
-                    </div>
-                </section>
-
-                <!-- about me -->
-                <section id="about-section" class = 'my-5 py-4'>
-                    <div class="container">
-                        <h4>About me <i class="em em-male-technologist"></i></h4>
-                        <p>
-                            <!-- My name is Luka Robajac and I come from Serbia. I've been working with back-end technologies and systems for roughly 2-3 years now. My skills do include front-end development, but that's not my main focus, I think I give better results in back-end side of things. -->
-                            My name is Luka Robajac and I come from Serbia. I am a full-stack web developer developing various apps and websites that can either be fun or help your business thrive! My main learning focus is on back-end technologies as I can far greatly contribute to a project on back-end side of things. 
-                        </p>
-                        <p>
-                            I am very social person, love to talk to people, love going out, and having fun in general! Programming has been my passion since day one and I always thrive to do better and gain as much experiences as I can through projects.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- my projects -->
-                <section id="projects-section" class = 'my-5 py-4'>
-                    <div class="container">
-                        <h4>Projects and experience <i class="em em-male-construction-worker"></i></h4>
-                        <p>
-                            Through my career as a freelancer, I got to work on many
-                            awesome projects with awesome clients. Most important thing I got from them is
-                            the experience. I consider that experience a must have in order to
-                            be able to build the best apps possible! Also, let's not forget the knowledge
-                            inevitable part of every project you do, whether it is work or personal
-                            project.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- skills -->
-                <section id = 'skills-section' class="my-5 py-4">
-                    <div class="container">
-                        <h4>Skills <i class="em em-weight_lifter"></i></h4>
-                        <div class="mt-3">
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                NodeJS
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                Laravel
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                PHP
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                Python
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                MySQL
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                MongoDB
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                JavaScript
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                C#
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                C
-                            </span>
-                            <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
-                                Basic front-end technologies
-                            </span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- career -->
-                <section id="freelancing-section" class = 'my-5 py-4'>
-                    <div class="container">
-                        <h4>Freelancing career <i class="em em-nerd_face"></i></h4>
-                        <p>
-                            I've been an active freelancer on UpWork for 2-3 years now. I've done a lot of different projects, with a lot of different people from all over the world. It was a fun ride, and I hope to keep it that way! You can see reviews of my work <a href="./pages/reviews.html" class = "green-text">here</a>
-                        </p>
-                    </div>
-                </section>
-
-                <div class="container mt-3 mb-3">
                     <hr />
                 </div>
+            </section>
 
-                <!-- social media -->
-                <section id="social-media-section" class = 'my-5 py-4'>
-                    <div class="container">
-                        <h4>Social media <i class="em em-iphone"></i></h4>
-                        <p>
-                            If you feel like it you can also follow me on any social media you like. I do post things from time to time. My GitHub holds all my projects, except work related projects are private and thus hidden.
-                        </p>
-                        <div class="text-center">
-                            <h3 class = 'd-inline-block mx-2'>
-                                <a target="_blank" href="https://www.facebook.com/luka.robajac00" class = 'green-text socials-btns'>
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </h3>
-                            <h3 class = 'd-inline-block mx-2'>
-                                <a target="_blank" href="https://www.instagram.com/robajaac" class = 'green-text socials-btns'>
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </h3>
-                            <h3 class = 'd-inline-block mx-2'>
-                                <a target="_blank" href="https://www.github.com/lyyka" class="green-text socials-btns">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </h3>
-                        </div>
+            <!-- about me -->
+            <section id="about-section" class='my-5 py-4'>
+                <div class="container">
+                    <h4>About me <i class="em em-male-technologist"></i></h4>
+                    <p>
+                        My name is Luka Robajac and I come from Serbia. I am a <strong>full-stack web
+                            developer</strong> developing various apps and websites that can either be fun or help
+                        your business thrive! My main learning focus is on back-end technologies as I can far
+                        greatly contribute to a project on back-end side of things.
+                    </p>
+                    <p>
+                        As for my <strong>education</strong>, I have graduated from 4-year software engineering class
+                        with highest
+                        grades. Currently I am at university of Organizational Sciences focusing on Information Systems
+                        and Technologies.
+                    </p>
+                    <p>
+                        I am very social person, love to talk to people, love going out, and having fun in general!
+                        Programming has been my passion since day one and I always thrive to do better and gain as much
+                        experiences as I can through projects.
+                    </p>
+                </div>
+            </section>
+
+            <!-- my projects -->
+            <section id="projects-section" class='my-5 py-4'>
+                <div class="container">
+                    <h4>Projects and experience <i class="em em-male-construction-worker"></i></h4>
+                    <p>
+                        Through my career as a freelancer, I got to work on many
+                        awesome projects with awesome clients. Most important thing I got from them is
+                        the <strong>experience</strong>. I consider that experience a must have in order to
+                        be able to build the best apps possible! Also, let's not forget the knowledge
+                        inevitable part of every project you do, whether it is work or personal
+                        project.
+                    </p>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section id='skills-section' class="my-5 py-4">
+                <div class="container">
+                    <h4>Skills <i class="em em-weight_lifter"></i></h4>
+                    <div class="mt-3">
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            NodeJS
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            Laravel
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            PHP
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            Python
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            MySQL
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            MongoDB
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            JavaScript
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            C#
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            C
+                        </span>
+                        <span class="rounded shadow-sm green-bg text-white p-1 mb-2 mr-2 d-inline-block">
+                            Basic front-end technologies
+                        </span>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- bottom -->
-                <p class="text-center">
-                    <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id = 'scroll-top'></i>
-                    <br />
-                    &copy; Luka Robajac <span id = 'year'></span>
-                    <script>
-                        document.getElementById('year').innerText = (new Date()).getFullYear();
-                    </script>
-                </p>
+            <!-- career -->
+            <section id="freelancing-section" class='my-5 py-4'>
+                <div class="container">
+                    <h4>Freelancing career <i class="em em-nerd_face"></i></h4>
+                    <p>
+                        I am an active, top-rated freelancer on UpWork for 3 years now. I've done a lot of different
+                        projects, with a lot of different people from all over the world. It is a fun ride, and I hope
+                        to keep it that way in the future! You can see reviews of my work <a href="./pages/reviews.html"
+                            class="green-text">
+                            <strong>here</strong>
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <div class="container mt-3 mb-3">
+                <hr />
             </div>
-        </div>
-        <!-- javascript -->
 
-        <!-- twitter script -->
-        <script>
-            window.twttr = (function(d, s, id) {
+            <!-- social media -->
+            <section id="social-media-section" class='my-5 py-4'>
+                <div class="container">
+                    <h4>Social media <i class="em em-iphone"></i></h4>
+                    <p>
+                        If you feel like it you can also follow me on any social media you like. I do post things from
+                        time to time. My GitHub holds all my projects, except work related projects are private and thus
+                        hidden.
+                    </p>
+                    <div class="text-center">
+                        <h3 class='d-inline-block mx-2'>
+                            <a target="_blank" href="https://www.facebook.com/luka.robajac00"
+                                class='green-text socials-btns'>
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </h3>
+                        <h3 class='d-inline-block mx-2'>
+                            <a target="_blank" href="https://www.instagram.com/robajaac"
+                                class='green-text socials-btns'>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </h3>
+                        <h3 class='d-inline-block mx-2'>
+                            <a target="_blank" href="https://www.github.com/lyyka" class="green-text socials-btns">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- bottom -->
+            <p class="text-center">
+                <i class="em em-grinning mt-5 mb-3 h3 cursor-pointer" id='scroll-top'></i>
+                <br />
+                &copy; Luka Robajac <span id='year'></span>
+                <script>
+                    document.getElementById('year').innerText = (new Date()).getFullYear();
+                </script>
+            </p>
+        </div>
+    </div>
+    <!-- javascript -->
+
+    <!-- twitter script -->
+    <script>
+        window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
                 t = window.twttr || {};
             if (d.getElementById(id)) return t;
@@ -320,32 +371,33 @@
             fjs.parentNode.insertBefore(js, fjs);
 
             t._e = [];
-            t.ready = function(f) {
+            t.ready = function (f) {
                 t._e.push(f);
             };
 
             return t;
-            }(document, "script", "twitter-wjs"));
-        </script>
-        <!-- configure twitter button -->
-        <script>
-            // document.getElementById('twt-share').setAttribute("data-url", window.location.href);
-            // document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
-        </script>
+        }(document, "script", "twitter-wjs"));
+    </script>
+    <!-- configure twitter button -->
+    <script>
+        // document.getElementById('twt-share').setAttribute("data-url", window.location.href);
+        // document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
+    </script>
 
-        <!-- load other scripts -->
+    <!-- load other scripts -->
 
-        <!-- for scrolling back to top -->
-        <script src = './js/scroll.js'></script>
-        <!-- for menu -->
-        <script src = './js/menu.js'></script>
-        <!-- notifications pop up on top -->
-        <script src = './js/notifications.js'></script>
-        <!-- sharing buttons -->
-        <script src = './js/sharing.js'></script>
-        <!-- confetti animation class, used in birthday widget if it is my birthday -->
-        <script src='./js/confetti.js'></script>
-        <!-- birthday widget -->
-        <script src = './js/birthday.js'></script>
-    </body>
+    <!-- for scrolling back to top -->
+    <script src='./js/scroll.js'></script>
+    <!-- for menu -->
+    <script src='./js/menu.js'></script>
+    <!-- notifications pop up on top -->
+    <script src='./js/notifications.js'></script>
+    <!-- sharing buttons -->
+    <script src='./js/sharing.js'></script>
+    <!-- confetti animation class, used in birthday widget if it is my birthday -->
+    <script src='./js/confetti.js'></script>
+    <!-- birthday widget -->
+    <script src='./js/birthday.js'></script>
+</body>
+
 </html>
