@@ -59,6 +59,8 @@
     <link rel="stylesheet" href="./css/index.css" />
     <!-- notifications.css -->
     <link rel="stylesheet" href="./css/notifications.css" />
+    <!-- pageclip -->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
 </head>
 
 <body class="position-relative">
@@ -117,7 +119,7 @@
             <i class="fas fa-share-alt circle-icon text-white"></i>
         </div> -->
 
-    <!-- Bottom part -->
+    <!-- Bottom part nav -->
     <div id='bottom-part'>
         <p class='text-right mb-0'>
             <i id='share-button' class="cursor-pointer fas fa-share-alt circle-icon text-white mr-3"></i>
@@ -189,7 +191,7 @@
                             <p class="text-dark  mb-2">
                                 <strong>
                                     <i class="fab fa-github mr-2"></i>
-                                    <a href="https://www.upwork.com/o/profiles/users/_~01770946482157855f/"
+                                    <a href="https://www.github.com/lyyka"
                                         target="_blank" class="text-dark">
                                         GitHub
                                     </a>
@@ -311,10 +313,6 @@
                 </div>
             </section>
 
-            <div class="container mt-3 mb-3">
-                <hr />
-            </div>
-
             <!-- social media -->
             <section id="social-media-section" class='my-5 py-4'>
                 <div class="container">
@@ -343,6 +341,37 @@
                             </a>
                         </h3>
                     </div>
+                </div>
+            </section>
+
+            <div class="container mt-3 mb-3">
+                <hr />
+            </div>
+
+            <!-- Contact form -->
+            <section id='contact-form' class='my-5 py-4'>
+                <div class='container'>
+                    <h4>Get in touch with me!</h4>
+                    <p class="text-muted">
+                        I would love to hear from you. Feel free to fill up the form below and I'll do my best to get back to you as soon as possible.
+                    </p>
+                    <form action="https://send.pageclip.co/tFIYBjgMVVQ7Ftn67pi2noFxbLY9g9Il/contact_form" class="pageclip-form" method="post">
+                        <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+                        
+                        <!-- It looks like you are creating a contact form. These email and subject fields are special -->
+                        <!-- See https://pageclip.co/docs#special-fields for more info -->
+                        <input type="email" name="email" class="rounded shadow-sm w-100 border mb-3 px-3 py-2" placeholder="Your email address" />
+                        <input type="text" name="subject" class="rounded shadow-sm w-100 border mb-3 px-3 py-2" placeholder="Subject" />
+
+                        <textarea class="rounded shadow-sm w-100 border mb-3 px-3 py-2" style="resize: none;" rows="7" placeholder="Type your message to me here..."></textarea>
+
+                        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                        <button type="submit" class="rounded border shadow px-lg-4 px-3 py-lg-3 py-2 green-bg text-white pageclip-form__submit">
+                            <span>
+                                <strong>Submit</strong>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </section>
 
@@ -383,6 +412,9 @@
         // document.getElementById('twt-share').setAttribute("data-url", window.location.href);
         // document.getElementById('twt-share').setAttribute("data-hashtags", "WebDev,FullStack,Awesome");
     </script>
+
+    <!-- Pageclip - for contact form -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     <!-- load other scripts -->
 
